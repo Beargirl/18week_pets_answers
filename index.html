@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Опросник для владельцев котиков</h1>
+    <div>
+        <label for="name">Кличка питомца</label>
+        <input type="text" id="name" required>
+    </div> <br>
+
+    <div>
+        <label for="fio_contacts">Имя и контакты <br> владельца</label>
+        <input type="text" id="fio_contacts" required />
+    </div> <br>
+
+    <div>
+        <label for="breed">Порода питомца</label>
+        <select name="Порода" id="breed">
+            <option value="1">Абиссинская</option>
+            <option value="2">Бенгальская</option>
+            <option value="3">Донской сфинкс</option>
+            <option value="4">Мейн-кун</option>
+            <option value="5">Русская голубая</option>
+            <option value="6">Сиамская</option>
+            <option value="7">Сибирская</option>
+        </select>
+    </div> <br>
+
+    <div>
+        <span>Чем питается</span>
+
+        <label for="food1"></label>
+        <input type="checkbox" name="food1" id="food1">Мокрый корм
+
+        <label for="food2"></label>
+        <input type="checkbox" name="food2" id="food2">Сухой корм
+
+        <label for="food3"></label>
+        <input type="checkbox" name="food3" id="food3">Натуральный корм
+    </div> <br>
+
+    <div>
+        <label for="sex">Выбрать пол питомца</label> <br>
+        Самка <input type="radio" name="sex"> <br> Самец <input type="radio" name="sex">
+    </div> <br>
+
+    <div>
+        <span>Комментарий владельца</span>
+        <textarea name="comment" cols="30" rows="10"></textarea>
+    </div> <br>
+
+    <div>
+        <span>Приложить фото питомца</span>
+        <input type="file" id="file">
+    </div> <br>
+
+    <div>
+        <button>Сохранить</button>
+    </div>
+    <style>
+        input:invalid {
+            border: 2px dashed red;
+        }
+
+        input:invalid:required {
+            background-image: linear-gradient(to right, green, yellow);
+        }
+
+        input:valid {
+            border: 2px solid black;
+        }
+    </style>
+
+</body>
+
+</html>
